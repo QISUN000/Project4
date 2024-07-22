@@ -21,12 +21,12 @@
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <div class="container1">
             <div class="logo">
                 <img src="./images/logo.png" alt="MEST Logo">
             </div>
-            <nav class="header-a">
+            <nav id="nav" class="header-a">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./products.html">Products</a></li>
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <div class="container2">
+    <div id="content" class="container2">
         <h1>POWERFUL TECHNOLOGY <br>AND CUSTOMER FOCUS</h1>
         <div class="breadcrumbs">
             <a href="./index.html">Homepage</a> / <span class="current-page">Support</span>
@@ -79,7 +79,7 @@
                         </p>
                     </li>
                     <li>
-                        <label for="province">Province</label>
+                        <label for="province">Province<span>*</span></label>
                         <select id="province" name="province">
                             <option value="">Select Province</option>
                             <option value="AB">Alberta</option>
@@ -96,6 +96,9 @@
                             <option value="NU">Nunavut</option>
                             <option value="YT">Yukon</option>
                         </select>
+                        <p class="province_error error" id="province_error">
+                            * You must choose a province
+                        </p>
                     </li>
                     <li>
                         <label for="city">City</label>
@@ -119,7 +122,7 @@
         </fieldset>
     </form>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-container">
             <div class="footer-left">
                 <div class="footer-logo">

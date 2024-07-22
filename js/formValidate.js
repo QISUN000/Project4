@@ -130,6 +130,21 @@ function formHasErrors() {
 			errorFlag = true;
 		}
 	}
+
+	//province dropdown validation
+	let provinceSelect = document.getElementById("province");
+    let selectedProvince = provinceSelect.value;
+
+    if (selectedProvince === "") {
+        document.getElementById("province_error").style.display = "block";
+
+        if (!errorFlag) {
+            document.getElementById("province").focus();
+            document.getElementById("province").select();
+        }
+
+        errorFlag = true;
+    }
 	
 	return errorFlag;
 }

@@ -15,11 +15,7 @@ body {
     line-height: 1.7;
     font-family: "Roboto", sans-serif;
 }
-/* * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-} */
+
 header {
     width: 100%;
     display: flex;
@@ -132,7 +128,6 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
-
 .banner-a img {
     margin:0;
     width: 100%;
@@ -150,7 +145,6 @@ header nav ul li a:hover {
     bottom: -3px;
     left: 0;        
 }
-
 
 .carousel {
     display: flex;
@@ -201,24 +195,24 @@ header nav ul li a:hover {
     background-color: #007bff;
 }
 
-.statistics {
+#statistics {
     background-color: #fff;
     padding: 50px 0;
     text-align: center;
     width: 100%;
 }
 
-.statistics .stats-content {
+#statistics .stats-content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.statistics h2 {
+#statistics h2 {
     font-size: 2em;
     margin-bottom: 2vw;
 }
 
-.statistics p {
+#statistics p {
     font-size: 1.2em;
     margin-bottom: 4vw;
 }
@@ -247,9 +241,8 @@ header nav ul li a:hover {
     margin: 1vw 0 0;
 }
 
-
 /* footer */
-footer{
+#footer{
     width: 100%;
 }
 
@@ -260,7 +253,6 @@ footer{
     background-color: #2b2f3a;
     border-top: 4px solid #00aea9;
     color:white;
-
 }
 
 .footer-left {
@@ -274,7 +266,6 @@ footer{
     display: inline-block;
     width: 5.73vw;
     line-height: 5.2vw;
-    
 }
 
 .footer-left .contact{
@@ -524,7 +515,7 @@ button#clear:hover {
         margin-right: 2vw;
     }
 
-    .statistics .stats {
+    #statistics .stats {
         flex-direction: column;
     }
 
@@ -558,7 +549,6 @@ button#clear:hover {
         flex-direction: column;
         align-items: center;
         height: auto;
-       
     }
 
     header nav ul {
